@@ -1,0 +1,14 @@
+# Site settings
+title: livsi.github.io
+email: pered@li.ru
+description: > # this means to ignore newlines until "baseurl:"
+  livsi.github.io
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://livsi.github.io" # the base hostname & protocol for your site
+github_username:  livsi
+
+exclude: [excluded]
+highlighter: pygments
+
+# Build settings
+markdown: kramdown

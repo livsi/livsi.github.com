@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  {% comment %} {% include header.html %} {% endcomment %}
+
+  <div class="container">
+
+    {% include header.html %} 
+
+    {{ content }}
+
+    <!-- Site footer -->
+    {% include footer.html %}
+
+  </div> <!-- /container -->
+</body>
+
+</html>
