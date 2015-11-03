@@ -92,3 +92,8 @@ git merge bug1
 {% highlight bash %}
 git help rebase (или man git-rebase).
 {% endhighlight %}
+
+Отмена запушеного мерджа
+++++++++++++++++++++++++
+
+http://www.christianengvall.se/undo-pushed-merge-git/
