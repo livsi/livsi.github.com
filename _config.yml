@@ -8,7 +8,7 @@ url: "http://livsi.github.io" # the base hostname & protocol for your site
 github_username:  livsi
 
 exclude: [excluded]
-highlighter: pygments
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
