@@ -8,7 +8,11 @@ tags: []
 
 Попасть внутрь хостовой машины Docker for Mac можно с помощью команды:
 
+{% highlight bash %}
 screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+{% endhighlight %}
+
+Чтобы выйти из **screen** - нажать Ctrl+A d
 
 Получить сведенья о сети:
 
