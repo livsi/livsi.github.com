@@ -2,8 +2,8 @@
 title: LiVsI - Web-developer
 description: A blog about lorem ipsum dolor sit amet
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://livsi.github.io" # the base hostname & protocol for site
-url: "http://localhost:3000" # the base hostname & protocol for site
+url: "https://livsi.github.io" # the base hostname & protocol for site
+# url: "http://localhost:3000" # the base hostname & protocol for site
 
 # User settings
 username: LiVsI
