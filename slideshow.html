@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Презентации"
+permalink: /slideshow/index.html
+description: ""
+---
+
+<main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div id="grid" class="row flex-grid">
+    {% for slideshow in site.slideshows %}
+        <article  data-url="{{ slideshow.url }}" class="box-item post post-{{slideshow.tag}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                <span class="ribbon">
+                    <a href="{{ slideshow.url }}"><span>{{slideshow.tag}}</span></a>
+                </span>
+                <div class="box-body">
+                    <meta itemprop="datePublished" content="{{slideshow.date | date_to_xmlschema }}">
+                    <time itemprop="datePublished" datetime="{{ slideshow.date }}" class="date">{{ slideshow.date | date_to_string }}</time>
+                    <a class="post-link" href="{{ slideshow.url }}">
+                        <h2 class="post-title" itemprop="name">
+                            {{ slideshow.title }}
+                        </h2>
+                    </a>
+                    <a class="post-link" href="{{ slideshow.url }}">
+                        <p class="description">{{ slideshow.description }}</p>
+                    </a>
+                    <div class="tags">
+                        {% for tag in slideshow.tags %}
+                            <a href="{{site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+        </article>
+    {% endfor %}
+    </div>
+</main>

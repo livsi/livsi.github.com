@@ -1,0 +1,50 @@
+# Site settings
+title: LiVsI - Web-developer
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://livsi.github.io" # the base hostname & protocol for site
+url: "http://localhost:3000" # the base hostname & protocol for site
+
+# User settings
+username: LiVsI
+user_description: LiVsI
+email: pered@li.ru
+# twitter_username: lorem_ipsum
+github_username:  livsi
+# disqus_username: lorem_ipsum
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Презентации
+    url: /slideshow
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
+
+slideshows:
+  - title: Git. Работаем в команде.
+    url: http://livsi.github.io/Dao-Git/?full#Cover
+    description: "Мини-лекция для MSK команды проекта imedicum.ru Цель: дать базовый набор сценариев для командной разработки"
+    tag: dev
+    date: 2015-05-21
+    tags: ['git']
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
