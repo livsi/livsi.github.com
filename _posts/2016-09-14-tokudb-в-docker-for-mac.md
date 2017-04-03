@@ -29,4 +29,11 @@ cat /sys/kernel/mm/transparent_hugepage/enabled
 для установки TokuDB Enginе нужно установить флаг конфигурации INIT_TOKUDB=true, но в связи с последними правками -
 вынужден был перейти на реально работающий на macOs - [miguelangel/percona-tokudb](https://hub.docker.com/r/miguelangel/percona-tokudb/)
 
-**UPDATE**: С конца 2016 года - эти танцы с бубном больше вроде как не нужны (в Moby по умолчанию отключили THP)[https://github.com/docker/docker.github.io/blob/master/docker-for-mac/release-notes.md#docker-for-mac-1121-2016-09-16-stable]
+**UPDATE**: С конца 2016 года - эти танцы с бубном больше вроде как не нужны (в Moby по умолчанию отключили THP)[https://github.com/docker/docker.github.io/blob/master/docker-for-mac/release-notes.md#docker-for-mac-1121-2016-09-16-stable] - но при тесте я обнаружил что все же нет:
+
+{% highlight bash %}
+/ # cat /sys/kernel/mm/transparent_hugepage/enabled
+always [madvise] never
+{% endhighlight %}
+
+Так что инструкция до сих пор актуальна
