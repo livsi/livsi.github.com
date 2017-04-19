@@ -26,6 +26,8 @@ paths:
             $ref: "#/definitions/Case"
         "404":
           description: "Case not found"
+          schema:
+            $ref: "#/definitions/Error"
         "401":
           description: "Need autorization"
       security:
@@ -48,8 +50,12 @@ paths:
             $ref: "#/definitions/Upshot"
         "404":
           description: "Case not found"
+          schema:
+            $ref: "#/definitions/Error"
         "401":
           description: "Need autorization"
+          schema:
+            $ref: "#/definitions/Error"
 securityDefinitions:
   c4r_auth:
     type: oauth2
@@ -122,3 +128,10 @@ definitions:
         type: integer
       payPrice:
         type: integer
+  Error:
+    type: object
+    properties:
+      status:
+        type: integer
+      message:
+        type: string
