@@ -1,0 +1,124 @@
+swagger: "2.0"
+info:
+  description: Спека API
+  version: "1.0.0"
+  title: Cases4Real-NG
+host: ng.cases4real.com
+basePath: /v1
+schemes:
+  - https
+paths:
+  /cases/{caseId}:
+    get:
+      summary: Получить кейс
+      tags:
+        - Cases
+      parameters:
+        - in: path
+          name: caseId
+          required: true
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: "Success"
+          schema:
+            $ref: "#/definitions/Case"
+        "404":
+          description: "Case not found"
+        "401":
+          description: "Need autorization"
+      security:
+        - c4r_auth:
+          - authorized
+    post:
+      summary: Результат открытия кейса
+      tags:
+        - Cases
+      parameters:
+        - in: path
+          name: caseId
+          required: true
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Upshot"
+        "404":
+          description: "Case not found"
+        "401":
+          description: "Need autorization"
+securityDefinitions:
+  c4r_auth:
+    type: oauth2
+    authorizationUrl: http://api.sss.ru/api/oauth/dialog
+    flow: implicit
+    scopes:
+      authorized: Пользователь авторизирован через внешний OAuth
+definitions:
+  Case:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      name:
+        type: string
+      price:
+        type: number
+        format: float
+        description: Цена кейса в текущей валюте пользователя
+      exp:
+        type: integer
+        description: Опыт
+      items:
+        type: array
+        items:
+          $ref: "#/definitions/CaseItem"
+      options:
+        type: array
+        items:
+          $ref: "#/definitions/CaseOption"
+  CaseItem:
+    type: object
+    properties:
+      id: 
+        type: integer
+      name: 
+        type: string
+      img:
+        type: string
+      price:
+        type: number
+        format: float
+      quality:
+        type: integer
+  CaseOption:
+    type: object
+    properties:
+      id:
+        type: integer
+      coef:
+        type: integer
+      name:
+        type: string
+      quality:
+        type: integer
+  Upshot:
+    type: object
+    properties:
+      status:
+        type: boolean
+      result:
+        $ref: "#/definitions/UpshotItem"
+  UpshotItem:
+    type: object
+    properties:
+      itemId:
+        type: integer
+      price:
+        type: integer
+      payPrice:
+        type: integer
