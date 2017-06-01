@@ -1,9 +1,6 @@
 .DS_Store
 _site
 node_modules
-<<<<<<< HEAD
-#_drafts
-=======
 _drafts
 .jekyll-metadata
->>>>>>> 27c531322262eb7eddf847658f063dcca55782f5
+
