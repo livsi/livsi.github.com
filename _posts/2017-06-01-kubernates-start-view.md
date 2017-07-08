@@ -76,5 +76,6 @@ brew install kompose
 
 Группа контейнеров (один или несколько), общее хранилище для этих контейнеров и варианты того, как запускать контейнеры.
 
+<!-- Эффект отсюда: http://animista.net/play/text/tracking-in/tracking-in-contract-bck-bottom -->
+<h3 class="tracking-in-contract">Продолжение следует ...</h3>
 
-### Продолжение следует ...
