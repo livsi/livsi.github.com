@@ -10,3 +10,19 @@ h1,h2,h3,h4
     
 .text-center
   text-align center
+
+.tracking-in-contract
+  animation tracking-in-contract 1s cubic-bezier(.215,.61,.355,1.000) both
+
+@keyframes
+  tracking-in-contract
+    0% letter-spacing 1em
+    transform translateZ(400px) translateY(300px)
+    opacity 0
+
+40%
+    opacity .6
+
+100%
+    transform translateZ(0) translateY(0)
+    opacity 1
