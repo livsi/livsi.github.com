@@ -24,13 +24,18 @@ Tmux - это то же самое что и iTerm2, только везде. Е
     tmux
 {% endhighlight %}
  
-Все другие команды предваряются сочетанием нажатых Ctrl-b
+Все другие команды предваряются сочетанием нажатых *Ctrl-b*
 
 Выйти - x
+
 Новое окно - c
+
 Список окон - w
+
 Переключиться на следующее окно - n
+
 --"-- на предыдущее - p
+
 --"-- по номеру - 0
 
 Разделить окно на две панели вертикально - % [# tmux split-window -v]
@@ -40,6 +45,6 @@ Tmux - это то же самое что и iTerm2, только везде. Е
 
 ### Почитать по теме:
  
-* https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+* [1]:https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 
-* https://habr.com/post/327630/
+* [2]:https://habr.com/post/327630/
