@@ -44,7 +44,9 @@ Tmux - это то же самое что и iTerm2, только везде. Е
 Переход между панелями - стрелки
 
 ### Почитать по теме:
- 
-* [1]:https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 
-* [2]:https://habr.com/post/327630/
+[A Quick and Easy Guide to tmux: Ham Vocke](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
+
+[Шпаргалка по работе с Tmux](https://habr.com/post/327630/)
+
+[Приручаем Tmux для повседневных нужд](https://habr.com/post/165437/)
