@@ -43,7 +43,7 @@ links:
 slideshows:
   - title: Git. Работаем в команде.
     url: http://livsi.github.io/Dao-Git/?full#Cover
-    description: "Мини-лекция для MSK команды проекта imedicum.ru <br \><b>Цель:</b> дать базовый набор сценариев для командной разработки"
+    description: 'Мини-лекция для MSK команды проекта imedicum.ru <br \><b>Цель:</b> дать базовый набор сценариев для командной разработки'
     tag: dev
     date: 2015-05-21
     tags: ['git']
