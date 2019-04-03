@@ -47,7 +47,6 @@ slideshows:
     tag: dev
     date: 2015-05-21
     tags: ['git']
-
   - title: Не используйте FOSUserBundle
     url: https://jolicode.github.io/fosuserbundle-conf/#/
     description: "Не моя, но интересная преза почему не нужно использовать FOSUserBundle"
