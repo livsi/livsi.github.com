@@ -43,10 +43,17 @@ links:
 slideshows:
   - title: Git. Работаем в команде.
     url: http://livsi.github.io/Dao-Git/?full#Cover
-    description: "Мини-лекция для MSK команды проекта imedicum.ru Цель: дать базовый набор сценариев для командной разработки"
+    description: "Мини-лекция для MSK команды проекта imedicum.ru <br \><b>Цель:</b> дать базовый набор сценариев для командной разработки"
     tag: dev
     date: 2015-05-21
     tags: ['git']
+
+  - title: Не используйте FOSUserBundle
+    url: https://jolicode.github.io/fosuserbundle-conf/#/
+    description: "Не моя, но интересная преза почему не нужно использовать FOSUserBundle"
+    tag: dev
+    date: 2019-04-03
+    tags: ['symfony']
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
