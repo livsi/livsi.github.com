@@ -6,7 +6,7 @@ image: '/assets/img/'
 description: "Unit тесты в php-разработке  🚀"
 main-class: dev
 color:
-tags:
+tags: 
 categories:
 twitter_text:
 introduction: "Unit тесты в php  🚀. Техники написания устойчивых, простых и быстрых модульных тестов"
@@ -88,3 +88,4 @@ final class testSomeService extends TestCase
 ### Источники
 
 [Using anonymous classes to write simpler tests](https://mnapoli.fr/anonymous-classes-in-tests/)
+[https://matthiasnoback.nl/2014/07/a-better-testing-experience/](https://matthiasnoback.nl/2014/07/a-better-testing-experience/)
