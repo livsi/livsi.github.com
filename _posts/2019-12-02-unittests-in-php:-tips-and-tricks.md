@@ -3,13 +3,13 @@ layout: post
 title: "UnitTests in PHP: tips and tricks"
 date: 2019-12-02 11:04:46
 image: '/assets/img/'
-description:
+description: "Unit тесты в php-разработке  🚀"
 main-class: dev
 color:
 tags:
 categories:
 twitter_text:
-introduction:
+introduction: "Unit тесты в php-разработке  🚀"
 ---
 
 ## Arrange, Act, Assert (AAA) паттерн
