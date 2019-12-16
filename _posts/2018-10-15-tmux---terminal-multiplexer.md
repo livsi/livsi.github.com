@@ -12,7 +12,7 @@ twitter_text:
 introduction:
 ---
 
-# Tmux - TerminalMUltipleXer
+## Tmux - TerminalMUltipleXer
 
 Tmux - это то же самое что и iTerm2, только везде. Единственная проблема, из за которой я его 
 до сих пор не использовал - мне было сложно запомнить все клавиатурный сокращения. Ну или хотя бы
@@ -23,7 +23,7 @@ Tmux - это то же самое что и iTerm2, только везде. Е
 {% highlight bash %}
     tmux
 {% endhighlight %}
- 
+
 Все другие команды предваряются сочетанием нажатых *Ctrl-b*
 
 Выйти - x
@@ -43,7 +43,7 @@ Tmux - это то же самое что и iTerm2, только везде. Е
 
 Переход между панелями - стрелки
 
-### Почитать по теме:
+### Почитать по теме
 
 [A Quick and Easy Guide to tmux: Ham Vocke](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
